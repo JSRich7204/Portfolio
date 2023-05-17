@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Blinker Regular';
+    src: url(/Users/janiyarichardson/pages/fonts/Blinker/Blinker-Regular.ttf);
+    
+}
+@font-face {
+    font-family:'BlinkerBold' ;
+    src: url(/Users/janiyarichardson/pages/fonts/Blinker/Blinker-Bold.ttf);
+}
+
+body{
+    background-color: #9392C7;
+    background-size: cover;
+}
+
+.topnav{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    place-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+    margin: auto;
+}
+.fadeIn{
+    animation: fadeInAnimation ease 6s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+a, button{
+    color:inherit;
+    text-align: center;
+    font-family: BlinkerBold;
+    font-size: large;
+
+}
+button{
+    background-color: #9392C7;
+    border: none;
+    padding: 16px 40px;
+
+}
+table{
+    align-items: center;
+    place-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: BlinkerBold;
+    color: white;
+    margin: auto;
+}
+
+
+h2,h3{
+    margin-left: auto;
+    font-family: Blinker Regular;
+    color: white;
+    text-align: center;
+
+}
+
+#welcome{
+    position: absolute;
+    font-size: 36px;
+    top: 261px;
+    bottom: 440px;
+    left: 701px;
+    width: 481px;
+    height: 67px;
+    
+}
+
+span{
+    animation: blinker 1s linear infinite;
+  }
+  
+  @keyframes blinker{
+    50%{
+      opacity: 0;
+    }
+  }
+
+#spelmanIntro{
+    position: absolute;
+    font-size: 32px;
+    width: 490px;
+    height: 244px;
+    top: 325px;
+    left: 708px;
+    bottom: 209px;
+  }
+
+#gear1{
+    position: absolute;
+    width: 273px;
+    height: 271px;
+    top: 283px;
+    left: 190px;
+    bottom: 214px;
+    animation: gear-rotate 5s both infinite;
+}
+#gear2{
+    position: absolute;
+    width: 273px;
+    height: 271px;
+    top: 146px;
+    left: 410px;
+    bottom: 351px;
+    animation: reverse-gear-rotate 5s both infinite;
+}
+
+@keyframes gear-rotate{
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes reverse-gear-rotate{
+    0% {
+        transform: rotateZ(0);
+    }
+    50% {
+        transform: rotateZ(-180deg);
+    }
+    100% {
+        transform: rotateZ(0deg);
+    }
+}
+
+
+/*@media screen and (max-width: 600px) {
+    .topnav{
+        display: none;
+    }
+}*/
