@@ -24,6 +24,8 @@ body{
     color: white;
     margin: auto;
 }
+
+/*Home Page*/
 .fadeIn{
     animation: fadeInAnimation ease 6s;
     animation-iteration-count: 1;
